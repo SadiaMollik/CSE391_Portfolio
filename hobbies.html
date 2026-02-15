@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    <header>
+        <h1>Sadia Hakim Mollik</h1>
+        <p><em>Hobbies </em></p>
+        <a href="index.html">Back to Home</a>
+        <button id="theme-toggle" style="margin-top:10px; padding:5px 10px; cursor:pointer;">Dark/Light Mode</button>
+    </header>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Watching Movies and Series, Reading Books.</p>
+        
+        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=400&q=80" 
+             alt="Hobby Image" 
+             style="width:300px; border-radius:10px; display:block; margin-top:15px;">
+
+        <p>One of my greatest passions is watching movies and series, which has always been a source of entertainment,
+             inspiration, and even reflection for me. I am particularly drawn to films that combine intricate storytelling, complex characters, 
+            and thought-provoking themes. My top favorites include mind-bending thrillers like The Prestige, 
+            Inception, and Shutter Island, which captivate me with their clever plot twists and suspenseful 
+            narratives. I also enjoy superhero and action films such as Batman Begins, The Dark Knight, 
+            Captain America: Civil War, and Avengers: Endgame, as they combine thrilling action with strong 
+            character development and moral dilemmas. Each time I watch these films, I find myself analyzing
+             the characters’ choices, the storytelling techniques, and the cinematography, which enhances my 
+             appreciation for the art of filmmaking. Beyond just movies, I enjoy immersing myself in series, 
+             where long-form storytelling allows for deeper character exploration and a gradual unfolding of 
+            complex plots. This hobby also allows me to connect with friends and online communities, sharing
+             reviews, predictions, and opinions about the latest releases. I find that watching films and series
+              not only entertains me but also inspires my imagination, encouraging me to think creatively and
+               consider perspectives different from my own. From psychological thrillers like Gone Girl to epic 
+               science fiction adventures like Interstellar, every film or series I watch leaves a lasting impression,
+                whether through its narrative, visuals, or emotional impact. Overall, my love for movies and series 
+                is more than a pastime—it is a hobby that enriches my life, sharpens my analytical thinking, and provides 
+                countless hours of enjoyment, discovery, and inspiration.</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Sadia Hakim Mollik | All Rights Reserved</p>
+        <p id="page-info"></p>
+    </footer>
+
+    <script>
+        const pageInfo = document.getElementById("page-info");
+        pageInfo.textContent = `Page URL: ${window.location.href} | Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+<script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
