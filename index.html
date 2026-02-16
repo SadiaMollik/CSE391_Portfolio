@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE391_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <button class="toggle-btn" onclick="toggleMode()">Dark/Light Mode</button>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <header>
+        <h1 style="font-size: 3em;">Sadia Hakim Mollik</h1>
+        <img src="391image.png" alt="Profile Picture">
+        <p style="font-size: 1.5em;"><em>"Man is but a reed, the most feeble thing in nature, but he is a thinking reed"
+                -- Blaise Pascal.</em></p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#personalinformation">Personal Information</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#technicalskills">Technical Skills</a>
+        <a href="hobbies.html">My Hobbies</a>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+    </nav>
+
+
+    <section id="personalinformation">
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> Sadia Hakim Mollik</p>
+        <p><strong>Date of Birth:</strong> 3rd May 2000</p>
+        <p><strong>Nationality:</strong> Bangladeshi</p>
+        <p><strong>Email Address:</strong> sadiamollik769@gmail.com</p>
+        <p><strong>Phone Number:</strong> +880 1632895699</p>
+        <p><strong>Address:</strong> House No. 14, Road No. 12, Merul Badda, Dhaka-1212</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sadia-hakim-mollik-2a197033a/"
+                target="_blank">Sadia Hakim Mollik</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/SadiaMollik" target="_blank">Sadia Hakim Mollik</a></p>
+    </section>
+    <section id="aboutme">
+        <h2>About Me</h2>
+        <p>I am Sadia Hakim Mollik.</p>
+        <p>I am studying at <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a> in the department of
+            Computer Science and Engineering. I love building projects. I also like watching movies and series.</p>
+        <p>Here are my top 10 favorite movies:</p>
+        <ul>
+            <li>The Prestige</li>
+            <li>Batman Begins</li>
+            <li>The Dark Knight</li>
+            <li>Captain America: Civil War</li>
+            <li>Gone Girl</li>
+            <li>Inception</li>
+            <li>Interstellar</li>
+            <li>Avengers: Endgame</li>
+            <li>Shutter Island</li>
+            <li>Joker</li>
+        </ul>
+        <p><strong>A review of my favorite movie "The Prestige" is:</strong> <a
+                href="https://medium.com/@zach.vecker/the-prestige-2006-movie-review-194e3bf8d16d" target="_blank">The
+                Prestige (2006) — Movie Review.</a></p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>GPA / Remarks</th>
+            </tr>
+            <tr>
+                <td>Secondary School Certificate (SSC)</td>
+                <td>Al-Hera Academy (School and college)</td>
+                <td>2017</td>
+                <td>GPA: 5.00</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary Certificate (HSC)</td>
+                <td>Al-Hera Academy (School and college)</td>
+                <td>2019</td>
+                <td>GPA: 4.83</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Science in Computer Science</td>
+                <td>BRAC University</td>
+                <td>Expected 2027</td>
+                <td>Ongoing</td>
+            </tr>
+        </table>
+
+        <p>The platform where students connect with CSE391 faculty is
+            <a href="https://discord.gg/KTxQmGuT" target="_blank">CSE 391 Discord</a>.
+        </p>
+    </section>
+
+    <section id="technicalskills">
+        <h2 style="color:#004d40;">Technical Skills</h2>
+        <p><strong>Languages:</strong>Python, SQL</p>
+        <p><strong>Tools:</strong>Git</p>
+        <p><strong>Operating Systems:</strong>Windows, Linux</p>
+        <p><strong>Other Skills:</strong>Problem Solving, Communication, Teamwork</p>
+        <p><strong>Soft Skills:</strong>Adaptability, Time Management, Leadership</p>
+        <p><strong>Languages:</strong>English (Fluent), Bengali (Native), French (Basic)</p>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="mailto:sadiamollik769@gmail.com" method="post" enctype="text/plain">
+            <label>Your Name:</label><br>
+            <input type="text" name="name" required><br>
+            <label>Your Email:</label><br>
+            <input type="email" name="email" required><br>
+            <label>Message:</label><br>
+            <textarea name="message" rows="5" required></textarea><br>
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2026 Sadia Hakim Mollik | All Rights Reserved</p>
+        <p id="page-info"></p>
+    </footer>
+
+    <script>
+        const pageInfo = document.getElementById("page-info");
+        const pageURL = window.location.href;
+        const lastModified = document.lastModified;
+        pageInfo.textContent = `Page URL: ${pageURL} , Last Modified: ${lastModified}`;
+    </script>
+
+
+</body>
+
+
+</html>
