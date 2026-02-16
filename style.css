@@ -30,26 +30,26 @@
 
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
     transition: background-color 0.5s, color 0.5s;
 }
 
 
 header {
     text-align: center;
-    background-color: var(--header-bg);
+    background-color: var(--header-bg); 
     padding: 100px;
     animation: fadeIn 2s ease-in-out;
 }
 
 header img {
-    width: 280px;
-    border-radius: 80%;
+    width: 280px; 
+    border-radius: 80%; 
     margin-top: 10px;
     transition: transform 0.5s, box-shadow 0.5s;
 }
@@ -57,11 +57,8 @@ header img {
 
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     text-align: center;
-    background-color: var(--nav-bg);
+    background-color: var(--nav-bg); 
     padding: 10px 0;
 }
 
@@ -74,7 +71,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--nav-hover);
+    color: var(--nav-hover); 
 }
 
 
@@ -84,7 +81,7 @@ section {
     background-color: var(--section-bg);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     animation: slideUp 1.5s ease forwards;
 }
 
@@ -108,12 +105,11 @@ a:hover {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     margin-top: 15px;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
@@ -129,27 +125,17 @@ th {
 }
 
 tr:hover {
-    background-color: var(--table-row-hover);
+    background-color: var(--table-row-hover); 
 }
 
 
 @media screen and (max-width: 600px) {
-
-    table,
-    tr,
-    th,
-    td {
+    table, tr, th, td {
         display: block;
         width: 100%;
     }
-
-    tr {
-        margin-bottom: 15px;
-    }
-
-    th {
-        text-align: left;
-    }
+    tr { margin-bottom: 15px; }
+    th { text-align: left; }
 }
 
 
@@ -168,7 +154,7 @@ img {
 
 img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 
@@ -189,27 +175,13 @@ button:hover {
 
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 
@@ -232,7 +204,7 @@ button:hover {
 .toggle-btn {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    left: 20px;  
     background-color: var(--nav-bg);
     color: white;
     padding: 12px 18px;
@@ -241,3 +213,4 @@ button:hover {
     transition: transform 0.3s, background-color 0.3s;
     z-index: 1000;
 }
+
